@@ -1,0 +1,10 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    span {
+        cursor: pointer;
+        padding: 20px;
+        margin: 0 10px;
+        border: 1px solid black;
+    }
+}

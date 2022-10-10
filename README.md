@@ -1,5 +1,2 @@
-## All about angular router
-
-# Description 
-In this repository you can find how to use angular router.
-Open branches and choose what you need
+## Description 
+CanLoad guard work only with lazy components. The difference between canLoad and canActivate is that module will not load if you try to open page (with canLoad guard). You can check this out in browser. Open network and see that module will not load when you try to open it
