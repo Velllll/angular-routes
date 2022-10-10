@@ -3,24 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home/home.component';
-import { AdminComponent } from './home/admin/admin.component';
-import { AddProductComponent } from './home/admin/add-product/add-product.component';
-import { AddUserComponent } from './home/admin/add-user/add-user.component';
-import { ListComponent } from './home/admin/list/list.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormComponent } from './pages/form/form.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ModalComponent } from './pages/components/modal/modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    FormComponent,
     HomeComponent,
-    AdminComponent,
-    AddProductComponent,
-    AddUserComponent,
-    ListComponent
+    ModalComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

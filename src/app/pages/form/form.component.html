@@ -1,0 +1,10 @@
+<form action="" [formGroup]="productForm" (ngSubmit)="saveForm()">
+    <input formControlName="product" type="text" placeholder="Name"> 
+    <input formControlName="amount" type="text" placeholder="Amount"> 
+    <button>Save</button>
+</form>
+
+<app-modal *ngIf="modalState | async">
+    <div class="warning">All data will be delete if you leave this page</div>
+    <button (click)="modalHendler(true)">ok</button>
+</app-modal>

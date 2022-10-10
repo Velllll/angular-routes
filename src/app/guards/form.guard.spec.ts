@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { PermissionsGuard } from './permissions.guard';
+import { FormGuard } from './form.guard';
 
-describe('PermissionsGuard', () => {
-  let guard: PermissionsGuard;
+describe('FormGuard', () => {
+  let guard: FormGuard;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    guard = TestBed.inject(PermissionsGuard);
+    guard = TestBed.inject(FormGuard);
   });
 
   it('should be created', () => {
