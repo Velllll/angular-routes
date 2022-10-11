@@ -1,0 +1,29 @@
+header {
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 50px;
+        max-width: 900px;
+        margin: 0 auto;
+        background-color: rgba(0, 0, 0, 0.9);
+        border-radius: 0 0 15px 15px;
+        color: white;
+        span {
+            cursor: pointer;
+        }
+    }
+    
+}
+
+main {
+    margin-top: 60px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+}

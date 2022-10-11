@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="details" *ngIf="userDetails$ | async as user">
+        <span routerLink="/users" class="close">x</span>
+        <div class="name">{{user.name}}</div>
+        <div class="username">{{user.username}}</div>
+        <div class="email">{{user.email}}</div>
+        <div class="phone">{{user.phone}}</div>
+        <div class="website">{{user.website}}</div>
+    </div>
+</div>

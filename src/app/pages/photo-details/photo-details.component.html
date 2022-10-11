@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="details" *ngIf="photoDetails$ | async as photo">
+        <span routerLink="/photos" class="close">x</span>
+        <div class="img">
+            <img [src]="photo.url" alt="">
+        </div>
+    </div>
+</div>

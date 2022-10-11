@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="users" *ngIf="photos$ | async as photos">
+        <ng-container *ngFor="let photo of photos">
+            <div class="user" (click)="openDetails(photo.id)">
+                <div class="img">
+                    <img [src]="photo.url" alt="">
+                </div>
+            </div>
+        </ng-container>
+
+    </div>
+    <div class="details">
+        <div class="card">
+            <router-outlet></router-outlet>
+
+        </div>
+    </div>
+</div>
