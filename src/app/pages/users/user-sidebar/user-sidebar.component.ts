@@ -25,8 +25,4 @@ export class UserSidebarComponent implements OnInit {
   ngOnInit(): void { 
     this.users$ = this.http.get<User[]>('https://jsonplaceholder.typicode.com/users')
   }
-
-  openDetails(id: number) {
-    this.router.navigate([`users(details:users/${id})`])
-  }
 }
