@@ -1,0 +1,29 @@
+.users {
+    width: 270px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 30px 10px;
+    .user {
+        margin: 20px;
+        text-align: center;
+        border: 1px solid rgb(177, 0, 0);
+        padding: 20px 10px;
+        cursor: pointer;
+
+        .img {
+            
+            img {
+                height: 40px;
+                width: 150px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.empty {
+    width: 270px;
+    height: 700px;
+    border: 1px solid black;
+    padding: 30px 10px;
+}

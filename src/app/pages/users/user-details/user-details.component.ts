@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Observable, switchMap } from 'rxjs';
-import { User } from '../users/users.component';
+import { User } from '../user-sidebar/user-sidebar.component';
 
 export interface UserDetailst extends User {
   username: string;

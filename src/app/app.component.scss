@@ -26,4 +26,11 @@ main {
     padding: 0 10px;
     display: flex;
     justify-content: center;
+    .details {
+        margin-left: 10px;
+        min-width: 400px;
+        .card {
+            position: fixed;
+        }
+    }
 }

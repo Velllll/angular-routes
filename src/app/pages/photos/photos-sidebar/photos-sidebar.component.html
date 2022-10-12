@@ -1,0 +1,13 @@
+<div class="users" *ngIf="photos$ | async as photos; else empty">
+    <ng-container *ngFor="let photo of photos">
+        <div class="user" [routerLink]="['', {outlets: { details: ['photos', photo.id] }}]">
+            <div class="img">
+                <img [src]="photo.url" alt="">
+            </div>
+        </div>
+    </ng-container>
+</div>
+
+<ng-template #empty>
+    <div class="empty"></div>
+</ng-template>

@@ -1,0 +1,16 @@
+<div class="users" *ngIf="users$ | async as users; else empty">
+    <ng-container *ngFor="let user of users">
+        <div class="user" [routerLink]="['', {outlets: { details: ['users', user.id] }}]">
+            <div class="name">
+                {{user.name}}
+            </div>
+            <div class="email">
+                {{user.email}}
+            </div>
+        </div>
+    </ng-container>
+</div>
+
+<ng-template #empty>
+    <div class="empty"></div>
+</ng-template>

@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Observable, switchMap } from 'rxjs';
-import { Photo } from '../photos/photos.component';
+import { Photo } from '../photos-sidebar/photos-sidebar.component';
 
 @Component({
   selector: 'app-photo-details',

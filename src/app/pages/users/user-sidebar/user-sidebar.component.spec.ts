@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PhotosComponent } from './photos.component';
+import { UserSidebarComponent } from './user-sidebar.component';
 
-describe('PhotosComponent', () => {
-  let component: PhotosComponent;
-  let fixture: ComponentFixture<PhotosComponent>;
+describe('UserSidebarComponent', () => {
+  let component: UserSidebarComponent;
+  let fixture: ComponentFixture<UserSidebarComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PhotosComponent ]
+      declarations: [ UserSidebarComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(PhotosComponent);
+    fixture = TestBed.createComponent(UserSidebarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

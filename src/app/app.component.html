@@ -6,5 +6,12 @@
 
 </header>
 <main>
-    <router-outlet></router-outlet>
+    <div class="side-bar">
+        <router-outlet></router-outlet>
+    </div>
+    <div class="details">
+        <div class="card">
+            <router-outlet name="details"></router-outlet>
+        </div>
+    </div>
 </main>

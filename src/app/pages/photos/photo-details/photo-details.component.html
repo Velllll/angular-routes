@@ -1,6 +1,6 @@
 <div class="container">
+    <span [routerLink]="['', {outlets: {details: null}}]">Close</span>
     <div class="details" *ngIf="photoDetails$ | async as photo">
-        <span routerLink="/photos" class="close">x</span>
         <div class="img">
             <img [src]="photo.url" alt="">
         </div>

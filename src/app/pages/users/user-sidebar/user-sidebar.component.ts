@@ -4,18 +4,17 @@ import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 
 export interface User {
-  name: string;
-  email: string;
   id: number;
+  name: string;
+  email: string
 }
 
 @Component({
-  selector: 'app-users',
-  templateUrl: './users.component.html',
-  styleUrls: ['./users.component.scss']
+  selector: 'app-user-sidebar',
+  templateUrl: './user-sidebar.component.html',
+  styleUrls: ['./user-sidebar.component.scss']
 })
-export class UsersComponent implements OnInit {
-
+export class UserSidebarComponent implements OnInit {
   users$!: Observable<User[]> 
 
   constructor(
@@ -23,12 +22,11 @@ export class UsersComponent implements OnInit {
     private router: Router
   ) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { 
     this.users$ = this.http.get<User[]>('https://jsonplaceholder.typicode.com/users')
   }
 
   openDetails(id: number) {
-    this.router.navigate(['users/' + id])
+    this.router.navigate([`users(details:users/${id})`])
   }
-
 }
